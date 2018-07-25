@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ife</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="pec2.css" />
+    <script src="main.js"></script>
+    <style>
+    html{
+    margin: 0px; 
+    padding: 0px; 
+    font-family: sans-serif
+    }
+header{
+width: 100%; 
+background: rgb(44, 43, 43); 
+height: 80px;
+}
+.middle-con{
+width: 960px; 
+margin: 0 auto;
+}
+.title-r{
+float: right;
+}
+.title-r a{
+color: white; 
+font-size: 15px;
+}
+.title-l{
+float: left; 
+color: white;
+}
+.banner{
+position: relative; 
+background: rgb(84, 190, 84); 
+width: 100%; 
+height: 100px;
+}
+.page1,.page2,.page3,.page4{
+position: absolute; 
+bottom: 10px;
+width: 15px; 
+height: 25px; 
+border: 1px solid white; 
+background: wheat; 
+color: black; 
+text-align: center;
+}
+.page1{
+right: 295px; 
+background: burlywood;
+}
+.page2{right: 270px;}
+.page3{right: 245px;}
+.page4{right: 220px;}
+.nav{
+width: 100%; 
+height: 80px; 
+border-bottom:1px solid rgb(165, 163, 163);
+}
+.nav-tage{
+width: 960px; 
+height: 60px; 
+margin: 0 auto; 
+margin-left: 150px;
+}
+.nav-home, .nav-profile, .nav-about{
+width: 100px; height: 45px; 
+margin-top: 35px; 
+box-sizing: border-box; 
+  padding-top: 12px; 
+  text-align: center; 
+  color: black; 
+  float: left;
+  border: 1px solid rgb(165, 163, 163); 
+  border-bottom: none; 
+  border-top-right-radius: 25%; 
+  border-top-left-radius: 30%; 
+  bottom: 0px;}
+.nav-home{background: rgba(209, 205, 205, 0.89);}
+.main-con{
+width: 960px; 
+margin-top: 15px; 
+margin: auto;}
+.row{display: flex;}
+.grid-cell{
+width: 200px; 
+height: 160px; 
+flex: 1 1 auto; 
+box-sizing: border-box; 
+border: 1px solid rgb(165, 163, 163);
+margin: 5px; 
+line-height: 160px; 
+text-align: center; 
+border-radius: 10px;}
+footer{
+width: 100%; 
+height: 75px; 
+background: dimgrey; 
+color: white; 
+line-height: 75px; 
+text-align: center;}
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="middle-con">
+            <div class="title-r">
+                <p><a href="#" >GitHub</a>&nbsp;<a href="#" >Register</a>&nbsp;<a href="#" >Login</a></p>
+            </div>
+            <div class="title-l">
+                <h1>Logo</h1>
+            </div>    
+        </div>
+    </header>
+    <div class="banner">
+        <div class="page1">1</div>
+        <div class="page2">2</div>
+        <div class="page3">3</div>
+        <div class="page4">4</div>
+    </div>
+    <div class="nav">
+        <div class="nav-tage">
+            <div class="nav-home">HOME</div>
+            <div class="nav-profile">PROFILE</div>
+            <div class="nav-about">ABOUT</div>
+        </div>
+    </div>
+    <div class="main-con">
+        <div class="row">
+            <div class="grid-cell">this is content1</div>
+            <div class="grid-cell">maybe content2</div>
+            <div class="grid-cell">content3</div>
+        </div>
+        <div class="row">
+            <div class="grid-cell">this is content4</div>
+            <div class="grid-cell">maybe content5</div>
+            <div class="grid-cell">content6</div>
+            <div class="grid-cell">content7</div>
+        </div>
+        <div class="row">
+            <div class="grid-cell">this is content8</div>
+            <div class="grid-cell">maybe content9</div>
+            <div class="grid-cell">content10</div>
+        </div>
+    </div>
+    <footer>
+        <p>@ 2018 ife.baidu.com</p>
+    </footer>
+    
+</body>
+</html>
