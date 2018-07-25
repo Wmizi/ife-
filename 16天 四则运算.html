@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+    <!-- <script type="text/javascript" src="si-ze.js"></script> -->
+</head>
+<body>        
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button type="button" onclick="functionadd()" id="add-btn">加</button>
+    <button type="button" onclick="functionmin()" id="minus-btn">减</button>
+    <button type="button" onclick="functiontimes()" id="times-btn">乘</button>
+    <button type="button" onclick="functiondivide()" id="divide-btn">除</button>
+    <p id="result">运算结果</p>
+    <script>
+    
+    function functionadd(one,two){
+        var one = document.getElementById("first-number").value;
+        var two = document.getElementById("second-number").value;
+        var answer;
+        answer = Number(one) + Number(two); 
+        //做加法运算时，注意用Number将数字提取出来，否则，+会将前后两个数字连接起来，而不是相加。
+        document.getElementById("result").innerHTML = answer;            
+    }
+    function functionmin(one,two){
+        var one = document.getElementById("first-number").value;
+        var two = document.getElementById("second-number").value;
+        var answer;
+        if(one >= two){
+            answer = one - two;
+        }else{
+            console.log("这样可执行不了呢！");
+        }
+        document.getElementById("result").innerHTML = answer;
+    }
+    function functiontimes(one,two){
+        var one = document.getElementById("first-number").value;
+        var two = document.getElementById("second-number").value;
+        var answer;
+        answer = one * two;
+        document.getElementById("result").innerHTML = answer;
+
+    }
+    function functiondivide(one,two){
+        var one = document.getElementById("first-number").value;
+        var two = document.getElementById("second-number").value;
+        var answer;
+        if(two != 0){
+            answer = one / two;
+            
+        }else{
+            console.log("除数不能为0，请重新输入！"); //if执行console.log时，记得放在else中
+        }
+        document.getElementById("result").innerHTML = answer;
+        
+
+    }
+   
+
+
+    </script>
+
+</body>
+</html>
