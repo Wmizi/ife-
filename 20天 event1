@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ife</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="pec.css" />
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+    <input id="name" type="text">    
+    <button id="submit-btn">Submit</button>  
+<script>
+var text = document.querySelector('#name');
+function evet(){
+    console.log(text.value);
+}
+document.querySelector('#submit-btn').onclick = evet;
+
+text.onkeydown = function(){
+    if(event.keyCode==13){
+        evet();
+    }
+    if(event.keyCode==27){
+        text.value="";
+    }
+}    
+    </script>
+</body>
+
+</html>
